@@ -1,1 +1,51 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-image: url(https://images.pling.com/img/00/00/62/67/36/1682916/165676-optical-illusion-abstract-art-illusion-blue-purple-1920x1080-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  height: 400px;
+  width: 300px;
+  color: red;
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.top-suit {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 70px;
+}
+.number {
+  align-items: center;
+  display: flex;
+  font-size: 70px;
+}
+.bottom-suit {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 70px;
+  rotate: 180deg;
+}
+button {
+  margin-left: 570px;
+  margin-top: 30px;
+  size: 200px;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+  color: purple;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
