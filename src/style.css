@@ -38,6 +38,13 @@ body {
   font-size: 70px;
   rotate: 180deg;
 }
+.top-suit.♣,
+.top-suit.♠,
+.bottom-suit.♣,
+.bottom-suit.♠ {
+  color: black;
+}
+
 button {
   margin-left: 570px;
   margin-top: 30px;

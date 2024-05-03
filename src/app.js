@@ -50,8 +50,8 @@ window.onload = function() {
 };
 
 const intervalId = setInterval(generateCard, 10000);
+
 button.addEventListener("click", () => {
   clearInterval(intervalId);
-  generateCard();
 });
-// console.log("Hello Rigo from the console!");
+console.log("Hello Rigo from the console!");
