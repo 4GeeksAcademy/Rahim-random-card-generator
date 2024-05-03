@@ -38,15 +38,15 @@ window.onload = function() {
     cardNumber.textContent = randomValue;
     topSuit.textContent = randomSuit;
     bottomSuit.textContent = randomSuit;
+    let color;
+    if (randomSuit === "♠" || randomSuit === "♣") {
+      color = "black";
+    } else {
+      color = "red";
+    }
+    topSuit.style.color = color;
+    bottomSuit.style.color = color;
   }
-  let color;
-  if (randomSuit === "♠" || randomSuit === "♣") {
-    color = "black";
-  } else {
-    color = "red";
-  }
-  topSuit.style.color = color;
-  bottomSuit.style.color = color;
 };
 
 const intervalId = setInterval(generateCard, 10000);
