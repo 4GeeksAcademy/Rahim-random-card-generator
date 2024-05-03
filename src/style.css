@@ -25,6 +25,13 @@ body {
   left: 10px;
   font-size: 70px;
 }
+.top-suit.♣,
+.top-suit.♠,
+.bottom-suit.♣,
+.bottom-suit.♠ {
+  color: black;
+}
+
 .number {
   align-items: center;
   display: flex;
