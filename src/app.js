@@ -47,11 +47,11 @@ window.onload = function() {
     topSuit.style.color = color;
     bottomSuit.style.color = color;
   }
+
+  const intervalId = setInterval(generateCard, 10000);
+
+  button.addEventListener("click", () => {
+    clearInterval(intervalId);
+  });
+  console.log("Hello Rigo from the console!");
 };
-
-const intervalId = setInterval(generateCard, 10000);
-
-button.addEventListener("click", () => {
-  clearInterval(intervalId);
-});
-console.log("Hello Rigo from the console!");
