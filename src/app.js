@@ -44,6 +44,7 @@ window.onload = function() {
 
   button.addEventListener("click", () => {
     clearInterval(intervalId);
+    generateCard();
   });
   console.log("Hello Rigo from the console!");
 };
