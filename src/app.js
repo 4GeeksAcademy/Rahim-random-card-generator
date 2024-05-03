@@ -39,12 +39,19 @@ window.onload = function() {
     topSuit.textContent = randomSuit;
     bottomSuit.textContent = randomSuit;
   }
-
-  const intervalId = setInterval(generateCard, 10000);
-
-  button.addEventListener("click", () => {
-    clearInterval(intervalId);
-    generateCard();
-  });
-  console.log("Hello Rigo from the console!");
+  let color;
+  if (randomSuit === "♠" || randomSuit === "♣") {
+    color = "black";
+  } else {
+    color = "red";
+  }
+  topSuit.style.color = color;
+  bottomSuit.style.color = color;
 };
+
+const intervalId = setInterval(generateCard, 10000);
+button.addEventListener("click", () => {
+  clearInterval(intervalId);
+  generateCard();
+});
+// console.log("Hello Rigo from the console!");
